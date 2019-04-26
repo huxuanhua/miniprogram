@@ -1,0 +1,3 @@
+<!--pages/tempOne/views/test1/index.wxml-->
+<page-head loading="{{loading}}"></page-head>
+<text>pages/tempOne/views/test1/index.wxml</text>

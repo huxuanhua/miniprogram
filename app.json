@@ -1,0 +1,78 @@
+{
+  "pages": [
+    "pages/tabBar/tempOne/index",
+    "pages/tabBar/tempTwo/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "模板",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/tabBar/tempOne/index",
+        "text": "导航一",
+        "iconPath": "images/icon/bar-home.png",
+        "selectedIconPath": "images/icon/bar-home-active.png"
+      },
+      {
+        "pagePath": "pages/tabBar/tempTwo/index",
+        "text": "导航二",
+        "iconPath": "images/icon/bar-userInfo.png",
+        "selectedIconPath": "images/icon/bar-userInfo-active.png"
+      }
+    ]
+  },
+  "subPackages": [
+    {
+      "name": "tempOne",
+      "root": "pages/tempOne/",
+      "pages": [
+        "views/test1/index"
+      ]
+    },
+    {
+      "name": "tempTwo",
+      "root": "pages/tempTwo/",
+      "pages": [
+        "views/temp1/index"
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/tabBar/tempOne/index": {
+      "network": "all",
+      "packages": [
+        "tempOne"
+      ]
+    },
+    "pages/tabBar/tempTwo/index": {
+      "packages": [
+        "tempTwo"
+      ]
+    }
+  },
+  "networkTimeout": {
+    "request": 5000,
+    "connectSocket": 5000,
+    "uploadFile": 5000,
+    "downloadFile": 5000
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "usingComponents":{
+    "page-head": "/components/page-head/index",
+    "nav-tab": "/components/nav-table/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

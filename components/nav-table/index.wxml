@@ -1,0 +1,14 @@
+<!--components/nav-table/index.wxml-->
+<view class="table-native" style='background-color:{{background}};'>
+    <view class='table-native-line' style="width:{{width}};left:{{left}};bottom:{{bottom}}"></view> 
+    <view class="table-native-content">
+      <view wx:for="{{clounms}}" wx:key="{{item}}"
+        class="{{ index === kindIndex ? 'active' : ''}}" 
+        data-index="{{index}}"
+        bindtap="tableMove"    
+      >
+        <text class='nav-item'>{{item}}</text>
+      </view>
+    </view>
+    
+</view>

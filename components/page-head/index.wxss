@@ -1,0 +1,36 @@
+/* components/page-head/index.wxss */
+.page-head{
+  display: flex;
+  align-items: center;
+  border-bottom: 2rpx solid rgba(200, 200, 200, .6);
+  position: relative;
+}
+.page-head-options{
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.page-head-options > view,.page-head-options > navigator{
+  width: 100rpx;
+  height: 40rpx;
+  text-align: center;
+}
+.page-head-options > view >image,.page-head-options > navigator>image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.page-head-title{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  font-size: 40rpx;
+
+}
+.head-loading > image{
+  width: 32rpx;
+  height: 32rpx;
+}

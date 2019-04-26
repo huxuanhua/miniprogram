@@ -1,0 +1,17 @@
+<!--components/page-head/index.wxml-->
+<view class='page-head' style='padding-top:{{barH || headH}}px;height:{{titleBarHeight}}px'>
+  <view class='page-head-options'>
+    <navigator class='page-head-goback' open-type='navigateBack' >
+      <image src='/images/icon/bar-home.png'></image>
+    </navigator>
+    <navigator class='page-head-goback' open-type='switchTab' url='/pages/tabBar/tempOne/index'>
+      <image src='/images/icon/bar-home.png'></image>
+    </navigator>
+  </view>
+  <view class='page-head-title'>
+    <view wx:if='{{!loading}}' class='head-loading'>
+      <image src='/images/icon/loading1.gif'></image>
+    </view>
+    <text>{{title}}</text>
+  </view>
+</view>

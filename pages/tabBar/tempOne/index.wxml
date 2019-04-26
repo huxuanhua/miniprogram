@@ -1,0 +1,6 @@
+<!--pages/tabBar/tempOne/index.wxml-->
+<page-head loading="{{loading}}"></page-head>
+<nav-tab clounms="{{clounms}}"></nav-tab>
+<text>pages/tabBar/tempOne/index.wxml</text>
+<navigator role="navigator" url='../../tempOne/views/test1/index'>www </navigator>
+<view bindtap='gototest'>前往test1</view>
